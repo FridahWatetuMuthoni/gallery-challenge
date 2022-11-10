@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #4E5150;
+    font-weight: 600;
+}
+
+.container{
+    width: 80%;
+    max-width: 1030px;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.profile-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom:30px ;
+    padding: 30px;
+}
+
+.profile-image{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+}
+
+.profile-image img{
+    border-radius: 6px;
+}
+
+.profile-content{
+    margin: 5px 0;
+    text-align: center;
+}
+
+.profile-content h1{
+    font-size: 24px;
+    line-height:29px ;
+}
+
+.profile-content p{
+    font-size: 14px;
+    line-height:17px ;
+    color: #A9A9A9;
+    margin-top: 5px;
+}
+
+.profile-stats{
+    margin: 5px 0;
+}
+
+.btn{
+    width: 120px;
+    height: 67px;
+    font-size: 18px;
+    line-height:22px ;
+    color: #4E5150;
+    text-align: center;
+    border-radius: 12px;
+    background: #E5E5E5;
+    border: none;
+}
+.btn span{
+    display: block;
+    color: #BDBDBD;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+.gallery img{
+    border-radius: 6px;
+    height: 100%;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3,300px);
+    gap: 1.5rem;
+    grid-template-areas:
+    "img1  img2 img2"
+    "img3  img3 img4"
+    "img5 img6 img4"
+}
+
+.image1{
+    grid-area: img1;
+}
+.image2{
+    grid-area:img2;
+}
+.image3{
+    grid-area:img3;
+}
+.image4{
+    grid-area: img4;
+}
+.image5{
+    grid-area: img5;
+}
+.image6{
+    grid-area: img6;
+}
+
+@media (max-width:1200px) {
+    .container{
+        width: 100%;
+    }
+ 
+}
+
+@media (max-width:900px){
+    .gallery{
+        gap:10px;
+}
+}
+
+@media (max-width:768px) {
+
+    .container{
+        padding: 10px;
+    }
+    
+    .btn{
+        width: 80px;
+        height: 57px;
+        font-size: 12px;
+        line-height:15px ;
+        margin-top: 5px;
+    }
+    .btn span{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .profile-image{
+    height: 200px;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+   .gallery{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+
+}
